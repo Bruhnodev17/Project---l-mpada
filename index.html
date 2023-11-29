@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Projeto-Lâmpada</title>
+</head>
+<body>
+    <h1>Light Bulb</h1>
+    <img id="lampada" src="./img/desligada.jpg" alt="lampada"  onclick="toBreak()">
+
+    <section>
+        <button id="button-on" onclick="on()">Ligar</button>
+        <button id="button-off" onclick="off()">Desligar</button>
+    </section>
+    
+</body>
+
+<script>
+const buttonOn = document.querySelector('.button-on')
+const buttonOff = document.getElementById('button-off')
+const lampada = document.querySelector('img')
+
+function on(){
+    lampada.src = './img/ligada.jpg'
+}
+
+function off(){
+    lampada.src = './img/desligada.jpg'
+}
+
+function toBreak(){
+    lampada.src = './img/quebrada.jpg'
+}
+
+buttonOn.addEventListener('click', on)
+buttonOff.addEventListener('click',off)
+toBreak.addEventListener('click', lampada)
+
+
+
+</script>
+</html>

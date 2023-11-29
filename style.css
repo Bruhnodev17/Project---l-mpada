@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1{
+    display:block;
+    text-align: center;
+    margin-top: 50px;
+}
+
+img{
+    display: block;
+    margin: auto;
+    width: 400px;
+}
+section{
+    display: block;
+    text-align: center;
+}
+button{
+    display: inline-block;
+    width: 150px;
+    height: 70px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: gray;
+    border: 2px solid black;
+    box-shadow: 5px 3px gray ;
+}
+
+button:active{
+   background-color: rgba(128, 128, 128, 0.692);
+}
